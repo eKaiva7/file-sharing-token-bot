@@ -30,7 +30,7 @@ DB_NAME = os.environ.get("DATABASE_NAME", "ultroidxTeam")
 # check my discription to help by using my refer link of shareus.io
 # 
 
-SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "https://vipurl.in/api?api={$api_token}&url={$long_url}&alias=CustomAlias&format=text")
+SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "https://vipurl.in/api?api=5044c3e812e853b1ff4f341cae5e6b4e6bfe7399&url=yourdestinationlink.com&alias=CustomAlias&format=text")
 SHORTLINK_API = os.environ.get("SHORTLINK_API", "5044c3e812e853b1ff4f341cae5e6b4e6bfe7399")
 VERIFY_EXPIRE = int(os.environ.get('VERIFY_EXPIRE', 86400)) # Add time in seconds
 IS_VERIFY = os.environ.get("IS_VERIFY", "True")
