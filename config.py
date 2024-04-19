@@ -3,35 +3,35 @@ import logging
 from logging.handlers import RotatingFileHandler
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7016582772:AAHFTsBsYAJ-Diigy-ZJGtk3uQpheQ3bqD8")
 
 #Your API ID & API HASH from my.telegram.org [https://youtu.be/gZQJ-yTMkEo?si=H4NlUUgjsIc5btzH]
 #Your API ID from my.telegram.org
-APP_ID = int(os.environ.get("APP_ID", ""))
+APP_ID = int(os.environ.get("APP_ID", "28777125"))
 
 #Your API Hash from my.telegram.org
-API_HASH = os.environ.get("API_HASH", "")
+API_HASH = os.environ.get("API_HASH", "75636ee26ed770293055f5d16f15c5ae")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", ""))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002046167177"))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", ""))
+OWNER_ID = int(os.environ.get("OWNER_ID", "6284812352"))
 
 #Port
 PORT = os.environ.get("PORT", "8080")
 
 #Database 
 #Database [https://youtu.be/qFB0cFqiyOM?si=fVicsCcRSmpuja1A]
-DB_URI = "mongodb+srv://Cluster0:Cluster0@cluster0.c07xkuf.mongodb.net/?retryWrites=true&w=majority"
+DB_URI = "mongodb+srv://techieg9999:techieg9999@cluster0.guco72y.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 DB_NAME = os.environ.get("DATABASE_NAME", "ultroidxTeam")
 
 #Shortner (token system) 
 # check my discription to help by using my refer link of shareus.io
 # 
 
-SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "api.shareus.io")
-SHORTLINK_API = os.environ.get("SHORTLINK_API", "PUIAQBIFrydvLhIzAOeGV8yZppu2")
+SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "https://vipurl.in")
+SHORTLINK_API = os.environ.get("SHORTLINK_API", "5044c3e812e853b1ff4f341cae5e6b4e6bfe7399")
 VERIFY_EXPIRE = int(os.environ.get('VERIFY_EXPIRE', 86400)) # Add time in seconds
 IS_VERIFY = os.environ.get("IS_VERIFY", "True")
 TUT_VID = os.environ.get("TUT_VID","gojfsi/2")
@@ -45,13 +45,13 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link.")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "6852649461").split()):
+    for x in (os.environ.get("ADMINS", "5379791947 6284812352 5418227641").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
 
 #Force sub message 
-FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Hello {first}\n\n<b>You need to join in my Channel/Group to use me\n\nKindly Please join Channel</b>")
+FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Hello {username}\n\n<b>You need to join in my Channel/Group to use me\n\nKindly Please join Channel</b>")
 
 #set your Custom Caption here, Keep None for Disable Custom Caption
 CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", "This video/Photo/anything is available on the internet. We LeakHubd or its subsidiary channel doesn't produce any of them.")
